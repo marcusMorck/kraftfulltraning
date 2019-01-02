@@ -102,6 +102,6 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-do_action( 'woocommerce_sidebar' );
+//Remove sidebardo_action( 'woocommerce_sidebar' );
 
 get_footer( 'shop' );

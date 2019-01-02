@@ -1,0 +1,4 @@
+2018-12-29T15:21:29+00:00 CRITICAL Cannot redeclare wc() (previously declared in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/woocommerce.php:38) in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce.php on line 39
+
+2018-12-29T15:22:04+00:00 CRITICAL Cannot redeclare wc() (previously declared in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/woocommerce.php:38) in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce.php on line 39
+
