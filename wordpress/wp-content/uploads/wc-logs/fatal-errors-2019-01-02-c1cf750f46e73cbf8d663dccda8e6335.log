@@ -1,0 +1,120 @@
+2019-01-02T15:49:55+00:00 CRITICAL syntax error, unexpected '}' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 29
+
+2019-01-02T15:50:56+00:00 CRITICAL syntax error, unexpected '}' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 29
+
+2019-01-02T15:52:57+00:00 CRITICAL syntax error, unexpected '}' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 29
+
+2019-01-02T15:54:57+00:00 CRITICAL syntax error, unexpected '}' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 29
+
+2019-01-02T16:02:36+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:27
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin-ajax.php(22): require_once('/Applications/M...')
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
+
+2019-01-02T16:03:37+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:27
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin-ajax.php(22): require_once('/Applications/M...')
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
+
+2019-01-02T16:06:25+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:27
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
+
+2019-01-02T16:06:30+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:27
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
+
+2019-01-02T16:06:33+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:27
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
+
+2019-01-02T16:06:35+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:27
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
+
+2019-01-02T16:07:20+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 25
+
+2019-01-02T16:07:23+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 25
+
+2019-01-02T16:14:28+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:27
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
+
+2019-01-02T16:21:42+00:00 CRITICAL Uncaught Error: Call to undefined function regisster_default_headers() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:27
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): customisetheme_setup('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(451): do_action('after_setup_the...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
+

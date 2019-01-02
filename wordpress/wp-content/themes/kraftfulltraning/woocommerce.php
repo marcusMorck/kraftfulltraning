@@ -1,1 +1,7 @@
-<?php woocommerce_content(); ?>
+<?php 
+
+get_header();
+woocommerce_content();
+
+
+?>
