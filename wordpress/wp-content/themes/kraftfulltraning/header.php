@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <a href="<?php echo get_option('home'); ?>">
-       <?php bloginfo('name'); ?></a>
-       <?php get_custom_header() ?>
-       
+        <div id="custom-header-img">
+            <a href="<?php echo get_option('home'); ?>">
+            <?php the_header_image_tag(); ?>
+            </a>
+        </div>  
     </header>
 

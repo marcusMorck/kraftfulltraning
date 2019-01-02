@@ -13,7 +13,13 @@ body,html {
     margin: 0;
 }
 header{
-    
+    background-color: #0a0a0a;
     width: 100%;
     height: 400px;
+    
+}
+#custom-header-img{
+    width: 980px;
+    height: 300px;
+    margin: 0 auto;
 }

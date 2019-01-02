@@ -118,3 +118,167 @@ Stack trace:
 #6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
 #7 /Applications/MAMP/htdocs/kraf in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 27
 
+2019-01-02T17:28:40+00:00 CRITICAL Uncaught Error: Call to undefined function add_theme() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include()
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/themes.php(10): require_once('/Applications/M...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 10
+
+2019-01-02T17:28:45+00:00 CRITICAL Uncaught Error: Call to undefined function add_theme() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include()
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 10
+
+2019-01-02T17:28:50+00:00 CRITICAL Uncaught Error: Call to undefined function add_theme() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include()
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin-ajax.php(22): require_once('/Applications/M...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 10
+
+2019-01-02T17:28:50+00:00 CRITICAL Uncaught Error: Call to undefined function add_theme() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include()
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/themes.php(10): require_once('/Applications/M...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 10
+
+2019-01-02T17:29:09+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(10): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/themes.php(10): require_once('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:29:12+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(10): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:29:14+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(10): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/customize.php(13): require_once('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:33:28+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(10): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/customize.php(13): require_once('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:33:37+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(10): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin-ajax.php(22): require_once('/Applications/M...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:33:39+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(10): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:34:02+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(10): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:34:08+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(10): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/index.php(10): require_once('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:37:39+00:00 CRITICAL Cannot redeclare add_custom_image_header() (previously declared in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/deprecated.php:2987) in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 12
+
+2019-01-02T17:37:47+00:00 CRITICAL Cannot redeclare add_custom_image_header() (previously declared in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/deprecated.php:2987) in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 12
+
+2019-01-02T17:37:50+00:00 CRITICAL Cannot redeclare add_custom_image_header() (previously declared in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/deprecated.php:2987) in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 12
+
+2019-01-02T17:41:51+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(11): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin.php(31): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/edit.php(10): require_once('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:41:57+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(11): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-admin/admin-ajax.php(22): require_once('/Applications/M...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+
+2019-01-02T17:41:59+00:00 CRITICAL Uncaught Error: Cannot unset string offsets in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php:2320
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(11): add_theme_support('custom-header', '$defaults')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/theme.php on line 2320
+

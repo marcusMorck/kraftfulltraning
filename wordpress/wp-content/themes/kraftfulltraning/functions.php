@@ -1,9 +1,22 @@
 <?php
+$args = array(
+	'width'         => 980,
+	'height'        => 300,
+	'default-image' => get_template_directory_uri() . '/images/alla-loggor.png',
+    'uploads'       => true,
+    'flex-height' => true,
+    'flex-width' => true,
+);
+add_theme_support( 'custom-header', $args );
 
-add_theme_support('custom-header', array(
-    'default-image' => get_template_directory_uri() . 'images/alla-loggor.png',
-    wid
-));
+
+register_default_headers( array(
+	'alla-loggor' => array(
+		'url'           => '%s/images/alla-loggor.png',
+		'description'   => __( 'Allaloggor', 'kraftfulltraning' )
+	),
+
+) );
 //Remove default css
 //define('WOOCOMMERCE_USE_CSS', false);
 function add_theme_scripts(){
@@ -21,3 +34,4 @@ add_theme_support( 'woocommerce');
 
 //function kraftfulltraning_woocommerce_scripts
 
+?>
