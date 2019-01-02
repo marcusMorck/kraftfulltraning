@@ -12,6 +12,7 @@
             <a href="<?php echo get_option('home'); ?>">
             <?php the_header_image_tag(); ?>
             </a>
-        </div>  
+        </div>
+        <?php wp_nav_menu( array( 'get_template_directory_uri()' => 'header-menu' ) ); ?> 
     </header>
 

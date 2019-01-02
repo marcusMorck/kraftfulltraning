@@ -1,4 +1,17 @@
 <?php
+/*------------------------------------------------------------------
+-------------------Custom Menu------------------------------------
+------------------------------------------------------------------*/
+
+function register_menu() {
+    register_nav_menu('header-menu',__( 'Header Menu' ));
+  }
+  add_action( 'init', 'register_menu' );
+
+
+/*------------------------------------------------------------------
+-------------------Custom Header------------------------------------
+------------------------------------------------------------------*/
 $args = array(
 	'width'         => 980,
 	'height'        => 300,
@@ -8,8 +21,7 @@ $args = array(
     'flex-width' => true,
 );
 add_theme_support( 'custom-header', $args );
-
-
+ 
 register_default_headers( array(
 	'alla-loggor' => array(
 		'url'           => '%s/images/alla-loggor.png',
@@ -17,6 +29,8 @@ register_default_headers( array(
 	),
 
 ) );
+/*-------------------------------------------------------------------
+--------------------------------------------------------------------*/
 //Remove default css
 //define('WOOCOMMERCE_USE_CSS', false);
 function add_theme_scripts(){
