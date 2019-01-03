@@ -8,18 +8,55 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
 */
+/*-----------------------------------------------------------------------------------
+---------------------------------RESETS----------------------------------------------
+-----------------------------------------------------------------------------------*/
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 body,html {
     padding: 0;
     margin: 0;
 }
+
+/*-----------------------------------------------------------------------------------
+---------------------------------HEADER----------------------------------------------
+-----------------------------------------------------------------------------------*/
 header{
     background-color: #0a0a0a;
     width: 100%;
-    height: 400px;
-    
 }
+/*---------------------------------------------
+-------------Custom-Header---------------------
+---------------------------------------------*/
 #custom-header-img{
     width: 980px;
     height: 300px;
     margin: 0 auto;
+}
+/*---------------------------------------------
+-------------Main-Menu-------------------------
+---------------------------------------------*/
+.menu-huvudmeny-container{
+    border-top: 1px solid #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-huvudmeny-container ul{
+    display: flex;
+    align-items: center;
+}
+.menu-huvudmeny-container li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 16px 14px 16px;
+}
+.menu-huvudmeny-container li a:hover{
+    color: #e6d74a;
+
 }
