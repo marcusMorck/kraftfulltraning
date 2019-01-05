@@ -46,6 +46,36 @@ add_theme_support( 'woocommerce');
 }
 
 
+
+/*------------------------------------------------------------------
+-------------------Single Product------------------------------------
+------------------------------------------------------------------*/
+remove_action('woocommerce_before_single_product', 'wc_print_notices', 10);
+//Remove image-gallery from the top of the page
+remove_action('woocommerce_before_single_product_summary','woocommerce_show_product_images',20);
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_show_product_images' , 1);
 //function kraftfulltraning_woocommerce_scripts
 
+
+//Function that adds an productimage to the hook single_product_summary
+function add_productimage_single_product_summary() {
+    
+    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'single-post-thumbnail' );?>
+
+    <img src="<?php  echo $image[0]; ?>" data-id="<?php echo $loop->post->ID; ?>">
+    <?php
+    
+    
+}
+//add_action( 'woocommerce_single_product_summary', 'add_productimage_single_product_summary', 1);
+
+
+
+
+//remove_action( 'woocommerce_before_single_product_summary', 'wc_print_notices', 10);
+//add_theme_support( 'wc-product-gallery-zoom' );
+//add_theme_support( 'wc-product-gallery-lightbox' );
+//add_theme_support( 'wc-product-gallery-slider' );
 ?>
+

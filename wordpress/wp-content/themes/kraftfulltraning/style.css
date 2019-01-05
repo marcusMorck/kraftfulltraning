@@ -60,3 +60,17 @@ header{
     color: #e6d74a;
 
 }
+
+.entry-summary{
+    display: flex;
+    flex-direction: column;
+    
+}
+.woocommerce-breadcrumb a{
+    color: #000;
+    text-decoration: none;
+}
+
+main{
+    padding: 30px 40px 40px 40px;
+}

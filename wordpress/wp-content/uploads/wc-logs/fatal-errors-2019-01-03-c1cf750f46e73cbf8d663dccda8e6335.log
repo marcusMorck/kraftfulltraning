@@ -1,0 +1,32 @@
+2019-01-03T15:04:07+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 52
+
+2019-01-03T15:46:09+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 54
+
+2019-01-03T15:49:25+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 54
+
+2019-01-03T15:56:21+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 54
+
+2019-01-03T15:56:30+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 54
+
+2019-01-03T17:31:21+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 64 and at least 2 expected in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php:554
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(64): remove_action('woocommerce_bef...')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#6 {main}
+  thr in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php on line 554
+
+2019-01-03T17:31:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 64 and at least 2 expected in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php:554
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(64): remove_action('woocommerce_bef...')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#6 {main}
+  thr in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php on line 554
+
