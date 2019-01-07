@@ -1,0 +1,11 @@
+2019-01-07T10:42:38+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 78 and at least 2 expected in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php:398
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(78): add_action()
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-settings.php(443): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-config.php(89): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#6 {main}
+  thrown i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php på rad 398
+

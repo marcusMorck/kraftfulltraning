@@ -1,0 +1,8 @@
+2019-01-05T16:00:48+00:00 CRITICAL Uncaught Error: Call to undefined function get_content() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/page.php:4
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/page.php på rad 4
+

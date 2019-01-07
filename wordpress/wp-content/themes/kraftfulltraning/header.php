@@ -15,5 +15,4 @@
         </div>
         <?php wp_nav_menu( array( 'get_template_directory_uri()' => 'header-menu' ) ); ?> 
     </header>
-    <main>
 

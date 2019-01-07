@@ -1,0 +1,4 @@
+2019-01-06T15:26:36+00:00 CRITICAL Maximum execution time of 30 seconds exceeded i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/formatting.php på rad 230
+
+2019-01-06T15:28:27+00:00 CRITICAL Maximum execution time of 30 seconds exceeded i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/post-template.php på rad 287
+

@@ -43,13 +43,7 @@ if ( post_password_required() ) {
 	<div class="summary entry-summary">
 
 		<?php
-		add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_home_text' );
-		function wcc_change_breadcrumb_home_text( $defaults ) {
-			// Change the breadcrumb home text from 'Home' to ''
-			$defaults['home'] = '';
-			return $defaults;
-		}
-		woocommerce_breadcrumb();
+
 			/**
 			 * Hook: woocommerce_single_product_summary.
 			 *
