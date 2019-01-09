@@ -71,14 +71,14 @@ function add_productimage_single_product_summary() {
 function store_title() {
 
     ?>
-    <h1 class="store-title">Kraftfullträning</h1>
+    <h1 class="shop-title">Kraftfullträning Webbshop</h1>
     <?php
 }
 
 add_action('woocommerce_before_shop_loop','store_title', 5);
 
 //remove_action( 'woocommerce_before_single_product_summary', 'wc_print_notices', 10);
-//add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-zoom' );
 //add_theme_support( 'wc-product-gallery-lightbox' );
 //add_theme_support( 'wc-product-gallery-slider' );
 
@@ -87,6 +87,7 @@ add_action('woocommerce_before_shop_loop','store_title', 5);
 ------------------------------------------------------------------*/
 
 remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+
 
 ?>
 
