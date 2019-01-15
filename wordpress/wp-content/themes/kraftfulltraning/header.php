@@ -13,6 +13,6 @@
             <?php the_header_image_tag(); ?>
             </a>
         </div>
-        <?php wp_nav_menu( array( 'get_template_directory_uri()' => 'header-menu' ) ); ?> 
+        <?php wp_nav_menu( array( 'get_template_directory_uri()' => 'main-nav', 'container' => '') ); ?> 
     </header>
 

@@ -1,0 +1,20 @@
+2019-01-11T13:00:26+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 101
+
+2019-01-11T13:02:26+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 101
+
+2019-01-11T13:04:26+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 101
+
+2019-01-11T13:06:26+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 101
+
+2019-01-11T13:08:27+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 101
+
+2019-01-11T13:33:09+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:105
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): product_grid('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/archive-product.php(67): do_action('woocommerce_sho...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applicat i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 105
+

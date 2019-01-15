@@ -66,7 +66,7 @@ if ( woocommerce_product_loop() ) {
 			 */
 			do_action( 'woocommerce_shop_loop' );
 
-			wc_get_template_part( 'content', 'product' );
+			//wc_get_template_part( 'content', 'product' );
 		}
 	}
 
@@ -99,7 +99,6 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-//Remove sidebar_action( 'woocommerce_sidebar' );
 do_action('woocommerce_sidebar');
 
 get_footer( 'shop' );

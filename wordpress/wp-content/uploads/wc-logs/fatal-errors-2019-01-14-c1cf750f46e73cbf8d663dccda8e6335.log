@@ -1,0 +1,40 @@
+2019-01-14T09:38:22+00:00 CRITICAL syntax error, unexpected 'foreach' (T_FOREACH) i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 113
+
+2019-01-14T09:38:31+00:00 CRITICAL syntax error, unexpected 'foreach' (T_FOREACH) i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 113
+
+2019-01-14T11:05:49+00:00 CRITICAL syntax error, unexpected '<' i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 123
+
+2019-01-14T13:51:43+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:121
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): product_grid('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/archive-product.php(67): do_action('woocommerce_sho...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applicati i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 121
+
+2019-01-14T13:52:59+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:121
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): product_grid('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/archive-product.php(67): do_action('woocommerce_sho...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...') i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 121
+
+2019-01-14T16:28:56+00:00 CRITICAL syntax error, unexpected '|' i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 121
+
+2019-01-14T17:16:15+00:00 CRITICAL Uncaught Error: Call to undefined function strop_tags() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:126
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): product_grid('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/archive-product.php(67): do_action('woocommerce_sho...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...') i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 126
+
+2019-01-14T18:57:30+00:00 CRITICAL syntax error, unexpected 'remove_action' (T_STRING) i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 152
+

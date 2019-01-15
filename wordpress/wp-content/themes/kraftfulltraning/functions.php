@@ -2,14 +2,14 @@
 /*------------------------------------------------------------------
 -------------------Custom Menu------------------------------------
 ------------------------------------------------------------------*/
-function register_menu() {
-    register_nav_menu('header-menu',__( 'Header Menu' ));
+function register_menu() { //Registers a custom wordpress menu
+    register_nav_menu('main-menu',__( 'Main Menu' ));
   }
-  add_action( 'init', 'register_menu' );
+  add_action( 'init', 'register_menu' );//Executes the function
 /*------------------------------------------------------------------
 -------------------Custom Header------------------------------------
 ------------------------------------------------------------------*/
-$args = array(
+$args = array( //Registers a custom wordpress header
 	'width'         => 980,
 	'height'        => 300,
 	'default-image' => get_template_directory_uri() . '/assets/images/alla-loggor.png',
@@ -27,16 +27,23 @@ register_default_headers( array(
 
 ) );
 /*-------------------------------------------------------------------
---------------------------------------------------------------------*/
-//Remove default css
-define('WOOCOMMERCE_USE_CSS', false);
-function add_theme_scripts(){
+-----------------------Enqueue Styles and Scripts--------------------
+-------------------------------------------------------------------*/
+
+//define('WOOCOMMERCE_USE_CSS', false); //Remove default woocommerce css
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
+function add_theme_scripts(){ //Function that adds scripts and stylesheets
+    //Enqueue Styles
     wp_enqueue_style( 'style.css', get_stylesheet_uri() );
+
+    //Enqueue Scripts
+    wp_enqueue_script( 'menu.js', get_stylesheet_directory_uri() . '/assets/js/menu.js', array('jquery'), null, true);
 }
 
-add_action('wp_enqueue_scripts', 'add_theme_scripts');
+add_action('wp_enqueue_scripts', 'add_theme_scripts'); //Executes the function add_theme_scripts
 //add woocommerce support
-add_action( 'after_setup_theme', 'woocommerce_support' );
+add_action( 'after_setup_theme', 'woocommerce_support' );//Executes the function woocommerce_support, adds support for custom wc
 
 function woocommerce_support() {
 add_theme_support( 'woocommerce');
@@ -83,11 +90,86 @@ add_theme_support( 'wc-product-gallery-zoom' );
 //add_theme_support( 'wc-product-gallery-slider' );
 
 /*------------------------------------------------------------------
--------------------Products------------------------------------
+-------------------Shop - Products----------------------------------
 ------------------------------------------------------------------*/
+/*-----------------------------
+--------Removed Actions--------
+-----------------------------*/
+	/**
+	 * Hook: woocommerce_before_shop_loop.
+	 *
+     * @removed hook woocommerce_result_count - 20
+	 */
+remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20); //Removes total product count
 
-remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+	/**
+	 * Hook: woocommerce_sidebar.
+	 *
+     * @removed hook woocommerce_get_sidebar - 10
+	 */
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
+	/**
+	 * Hook: woocommerce_sidebar.
+	 *
+     * @removed hook woocommerce_get_sidebar - 10
+	 */
 
 
+/*-----------------------------
+--------Added Actions----------
+-----------------------------*/
+	/**
+	 * Hook: woocommerce_shop_loop.
+	 *
+     * @hooked product_grid - 11
+	 */
+    
+add_action('woocommerce_shop_loop', 'product_grid', 11); //Adds the produ
+
+function get_first_product_category_without_link(){ //Function that gets the first product category without link
+    $productCategory = wc_get_product_category_list( get_the_id() ); //Gets the list of categories
+    $productCategory = explode(",", $productCategory); //Split up the categories and put them in an array
+    $productCategory = strip_tags($productCategory[0]); //Remove the <a> tags
+    return $productCategory;
+}
+
+function get_brand($productData){ //Function that gets the brand
+    $brands = wp_get_post_terms( $productData->get_id(), 'pwb-brand' ); //Get the brand of the product
+    foreach( $brands as $brand ) {
+        $getBrand = $brand->name;
+    }
+    return $getBrand;
+}
+//Function for the shops product grid
+function product_grid() { 
+    global $product; //Fix for the error: "Notice: id was called incorrectly. Product properties should not be accessed directly")
+    ?>
+    
+        <div class="product-cards">
+        <a class="card-inner" href="<?=the_permalink();?>">
+            <img class="card-img" src=<?=get_the_post_thumbnail_url( $product->get_id(), 'full' ); //Get the product image ?> /> 
+        
+        <ul class="card-list">
+            <li class="card-list-item"><?=get_first_product_category_without_link();?></li>
+            <li class="card-list-item">|</li>
+            <li class="card-list-item"><?=get_brand($product); //Output the brand?></li>
+        </ul>
+
+    <h3><?=$product->get_name();//The product name?></h3>
+
+
+    <p class="price"><?=$product->get_price();?> <?=get_woocommerce_currency_symbol(); //Product price and currency symbol?></p>
+
+    </a>
+    </div>
+ 
+    <?php
+}
+/*------------------------------------------------------------------
+-------------------Shop - Single Product----------------------------
+------------------------------------------------------------------*/
+remove_action('woocommerce_shop_loop', 'WC_Structured_Data::generate_product_data()', 10);
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 ?>
 

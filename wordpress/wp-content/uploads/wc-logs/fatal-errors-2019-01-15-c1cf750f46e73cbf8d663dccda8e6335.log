@@ -1,0 +1,43 @@
+2019-01-15T10:28:12+00:00 CRITICAL Uncaught Error: Call to undefined function getBrand() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:129
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): product_grid('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/archive-product.php(67): do_action('woocommerce_sho...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+# i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 129
+
+2019-01-15T10:29:07+00:00 CRITICAL Uncaught Error: Call to undefined function getBrand() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): product_grid('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/archive-product.php(67): do_action('woocommerce_sho...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+# i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 130
+
+2019-01-15T10:29:31+00:00 CRITICAL Uncaught Error: Call to undefined function getBrand() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): product_grid('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/archive-product.php(67): do_action('woocommerce_sho...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/index.php(17): require('/Applications/M...')
+# i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 131
+
+2019-01-15T10:30:32+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:104
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(130): get_brand()
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): product_grid('')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/archive-product.php(67): do_action('woocommerce_sho...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template-loader.php(74): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-blog-header.php(19): require_o i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 104
+
