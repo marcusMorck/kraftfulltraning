@@ -49,8 +49,9 @@ function woocommerce_support() {
 add_theme_support( 'woocommerce');
 }
 
-add_action('woocommerce_before_single_product_summary', 'woocommerce_breadcrumb', 20);
+
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+add_action('woocommerce_before_single_product_summary', 'woocommerce_breadcrumb', 2);
 
 /*------------------------------------------------------------------
 -------------------Single Product------------------------------------
@@ -75,12 +76,7 @@ function add_productimage_single_product_summary() {
 }
 //add_action( 'woocommerce_single_product_summary', 'add_productimage_single_product_summary', 1);
 
-function store_title() {
 
-    ?>
-    <h1 class="shop-title">Kraftfullträning Webbshop</h1>
-    <?php
-}
 
 add_action('woocommerce_before_shop_loop','store_title', 5);
 
@@ -124,8 +120,11 @@ remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 	 *
      * @hooked product_grid - 11
 	 */
-    
-add_action('woocommerce_shop_loop', 'product_grid', 11); //Adds the produ
+add_action('woocommerce_shop_loop', 'product_grid', 11); //Adds the product grid
+
+function store_title() {
+?><h1 class="shop-title">Kraftfullträning Webbshop</h1><?php
+}
 
 function get_first_product_category_without_link(){ //Function that gets the first product category without link
     $productCategory = wc_get_product_category_list( get_the_id() ); //Gets the list of categories
@@ -145,7 +144,6 @@ function get_brand($productData){ //Function that gets the brand
 function product_grid() { 
     global $product; //Fix for the error: "Notice: id was called incorrectly. Product properties should not be accessed directly")
     ?>
-    
         <div class="product-cards">
         <a class="card-inner" href="<?=the_permalink();?>">
             <img class="card-img" src=<?=get_the_post_thumbnail_url( $product->get_id(), 'full' ); //Get the product image ?> /> 
@@ -156,14 +154,13 @@ function product_grid() {
             <li class="card-list-item"><?=get_brand($product); //Output the brand?></li>
         </ul>
 
-    <h3><?=$product->get_name();//The product name?></h3>
+    <h3 class="card-title"><?=$product->get_name();//The product name?></h3>
 
 
     <p class="price"><?=$product->get_price();?> <?=get_woocommerce_currency_symbol(); //Product price and currency symbol?></p>
 
     </a>
     </div>
- 
     <?php
 }
 /*------------------------------------------------------------------
@@ -171,5 +168,52 @@ function product_grid() {
 ------------------------------------------------------------------*/
 remove_action('woocommerce_shop_loop', 'WC_Structured_Data::generate_product_data()', 10);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+
+function wc_remove_all_quantity_fields( $return, $product ) {
+    return true;
+}
+add_filter( 'woocommerce_is_sold_individually', 'wc_remove_all_quantity_fields', 10, 2 );
+
+function get_product_thumbnails($product){
+    global $product;
+    ?> 
+    <div class="thumbnails">
+    <?php
+       $attachment_ids = $product->get_gallery_image_ids();
+    foreach( $attachment_ids as $attachment_id ) {
+            $image_link = wp_get_attachment_url( $attachment_id );
+            ?>
+                <div class="thumbnail">
+                    <img src="<?=$image_link?>" />
+                </div>
+            <?php
+    }
+    ?>
+    </div>
+    <?php
+}
+function get_product_image(){
+
+}
+function product_image_gallery(){
+    ?>
+    <div class="product-image-gallery">
+    <?php
+    global $product;
+    $attachment_ids = $product->get_gallery_image_ids();
+    get_product_thumbnails($product);
+    ?>
+    <img src="<?=wp_get_attachment_url($product->get_image_id());?>"/>
+    
+    </div>
+
+    <?php
+    //$prodImages = wc_get_gallery_image_html( $post_thumbnail_id, true );
+    //echo $prodImages;
+
+    
+}
+add_action('woocommerce_before_single_product_summary', 'product_image_gallery', 1)
 ?>
 
