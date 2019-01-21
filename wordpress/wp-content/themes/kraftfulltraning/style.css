@@ -12,23 +12,23 @@
 ---------------------------------RESETS----------------------------------------------
 -----------------------------------------------------------------------------------*/
 ul{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    padding: 0; /*remove default padding */
+    margin: 0; /*remove default margin*/
+    list-style-type: none; /*remove default "dots"*/
 }
 
 body,html {
-    padding: 0;
-    margin: 0;
+    padding: 0; /*remove default padding */
+    margin: 0; /*remove default margin*/
 }
-h1, h2, h3{
-    margin: 0;
+h1, h2, h3, p{
+    margin: 0; /*remove default margin*/
 }
 a{
-    text-decoration: none;
+    text-decoration: none; /*remove default underline from all a elements*/
 }
-p{
-    margin: 0;
+main{
+    padding: 0 15px;
 }
 /*-----------------------------------------------------------------------------------
 ---------------------------------HEADER----------------------------------------------
@@ -45,20 +45,28 @@ header{
 -------------Custom-Header---------------------
 ---------------------------------------------*/
 #custom-header-img{
-    width: 980px;
-    height: 300px;
+
 }
+#custom-header-img img{ 
+    width: 100%;
+    height: auto;
+}
+
 /*---------------------------------------------
 -------------Main-Menu-------------------------
 ---------------------------------------------*/
 #menu-huvudmeny  {
+    width: 100%;
     height: 30px; /* set to the height you want your menu to be */
-    margin: 0 0 10px; /* just to give some spacing */
+   /*  margin: 0 0 10px; /* just to give some spacing */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
 
+}
+#menu-huvudmeny a {
+    color: #fff;
+}
 .sub-menu{
     display: flex;
     position: absolute;
@@ -195,13 +203,14 @@ footer p{
 ---------Breadcrumb----------------------------------
 ---------------------------------------------------*/
 .product .woocommerce-breadcrumb{
-    padding: 30px 0 0 15px;
+    padding: 30px 0 15px 0;
     width: 100%;
 }
 .woocommerce-breadcrumb a{
     color: #000;
     text-decoration: none;
 }
+
 .woocommerce-product-gallery{
     display: flex;
     flex: 2;
@@ -210,15 +219,16 @@ footer p{
 .entry-summary{
     display: flex;
     flex-direction: column;
-    
-   flex: 1;
+    padding-top: 10px;
+    flex: 1;
 }
 .entry-summary .product_title{
     font-size: 22px;
 }
 .entry-summary .single_add_to_cart_button{
+    font-size: 14px;
     width: 100%;
-    height: 30px;
+    height: 50px;
     border: none;
     background-color: #000;
     color: #e7d93a;
@@ -230,10 +240,70 @@ footer p{
 .woocommerce-product-gallery__wrapper{
     display: flex;
 }
-.thumbnails img{
+.product-image-gallery .thumbnails img{
     width: 95px;
     height: 100px;
 }
 .product-image-gallery{
     display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+.product-image-gallery .thumbnails{
+    padding-bottom: 10px;
+    width: 235px;
+}
+.product-image-gallery .product-image{
+    width: 550x;
+}
+.woocommerce-tabs{
+    width: 100%;
+}
+.prodsum{
+    display: flex;
+}
+.product-image{
+    display: flex;
+    justify-content: center;
+    flex: 3;
+}
+.product_title{
+
+}
+.entry-summary .price{
+    font-size: 32px;
+    font-weight: bold;
+}
+.product-meta{
+    display: flex;
+    margin-bottom: 15px;
+}
+.product-meta .product-meta-item{
+    margin-left: 5px;
+}
+.product-meta .product-meta-item:first-child{
+    margin-left: 0;
+}
+.pwb-single-product-brands{
+    display: none;
+}
+.tabs{
+    display: flex;
+}
+#tab-description{
+    padding: 15px 0;
+}
+
+.variations .value #pa_storlek{
+    height: 50px;
+    width: 200px;
+}
+.woocommerce-tabs ul{
+    background-color: #000;
+}
+.woocommerce-tabs li{
+    margin-left: 5px;
+    padding: 14px 16px;
+    background-color: #000;
 }

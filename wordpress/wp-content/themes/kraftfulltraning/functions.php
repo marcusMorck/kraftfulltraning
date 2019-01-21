@@ -51,7 +51,7 @@ add_theme_support( 'woocommerce');
 
 
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-add_action('woocommerce_before_single_product_summary', 'woocommerce_breadcrumb', 2);
+
 
 /*------------------------------------------------------------------
 -------------------Single Product------------------------------------
@@ -166,6 +166,7 @@ function product_grid() {
 /*------------------------------------------------------------------
 -------------------Shop - Single Product----------------------------
 ------------------------------------------------------------------*/
+add_action('woocommerce_before_single_product_summary', 'woocommerce_breadcrumb', 1);
 remove_action('woocommerce_shop_loop', 'WC_Structured_Data::generate_product_data()', 10);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
@@ -175,10 +176,8 @@ function wc_remove_all_quantity_fields( $return, $product ) {
 }
 add_filter( 'woocommerce_is_sold_individually', 'wc_remove_all_quantity_fields', 10, 2 );
 
-function get_product_thumbnails($product){
-    global $product;
-    ?> 
-    <div class="thumbnails">
+function get_product_thumbnails($product){//Function that gets the product thumbnail images
+    ?><div class="thumbnails">
     <?php
        $attachment_ids = $product->get_gallery_image_ids();
     foreach( $attachment_ids as $attachment_id ) {
@@ -193,27 +192,59 @@ function get_product_thumbnails($product){
     </div>
     <?php
 }
-function get_product_image(){
-
-}
-function product_image_gallery(){
+function get_product_image($product){//Function that gets the product image
+    $attachment_ids = $product->get_gallery_image_ids();
     ?>
+    <div class="product-image">
+        <img src="<?=wp_get_attachment_url($product->get_image_id());?>"/>
+    </div>
+    <?php
+    
+}
+function product_image_gallery(){//function for the product image gallery
+    global $product;
+    ?>
+
     <div class="product-image-gallery">
     <?php
-    global $product;
-    $attachment_ids = $product->get_gallery_image_ids();
-    get_product_thumbnails($product);
+        get_product_thumbnails($product);
+        get_product_image($product);
     ?>
-    <img src="<?=wp_get_attachment_url($product->get_image_id());?>"/>
-    
     </div>
-
-    <?php
-    //$prodImages = wc_get_gallery_image_html( $post_thumbnail_id, true );
-    //echo $prodImages;
-
-    
+    <?php    
 }
-add_action('woocommerce_before_single_product_summary', 'product_image_gallery', 1)
+function product(){
+    ?>
+    <div class="product-sum">
+        <?php
+}
+add_action('woocommerce_before_single_product_summary', 'product_image_gallery', 2);
+remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
+
+
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+add_action('woocommerce_single_product_summary', 'get_product_categories', 6);
+function get_product_categories(){
+    global $product;
+
+    $productCategories = wc_get_product_category_list( $product->get_id());
+    $productCategories = explode(',',$productCategories);
+    //$productCategories = strip_tags($productCategories);
+    ?>
+    <ul class="product-meta">
+    <?php
+    foreach ($productCategories as $productCategory){
+       ?> <li class="product-meta-item"><?= strip_tags($productCategory); ?></li><?php
+    }
+    
+    ?>
+    <li class="product-meta-item"><?=get_brand($product)?></li>
+    </ul>
+    <?php
+
+}
+
 ?>
 
