@@ -18,11 +18,11 @@
             Bunkern Hisings Kärra och BOXEN Säffle samt Military Fitness Outdoor utomhus på flertalet platser och orter.</h5>
 
             <ul>
-                <li>Kärra Göteborg</li>
-                <li>Skatås Göteborg</li>
-                <li>Billdal Göteborg
-                <li>Säffle</li>
-                <li>Åmål</li>
+                <li><p>Kärra Göteborg</p></li>
+                <li><p>Skatås Göteborg</p></li>
+                <li><p>Billdal Göteborg</p></li>
+                <li><p>Säffle</p></li>
+                <li><p>Åmål</p></li>
             </ul>
  
 
@@ -73,7 +73,7 @@
             <p>Inget uppdrag är för litet eller för stort - vi skräddarsyr varje uppdrag och vi har ett helt team av instruktörer som är beredda
             att ta sig an era önskemål!</p>
 
-            </p>Tveka inte att kontakta oss så vi tillsammans kan diskutera hur ert event kan bli en minnesvärd upplevelse!</p>
+            <p>Tveka inte att kontakta oss så vi tillsammans kan diskutera hur ert event kan bli en minnesvärd upplevelse!</p>
 
         </div>
         <div class="side-content">
