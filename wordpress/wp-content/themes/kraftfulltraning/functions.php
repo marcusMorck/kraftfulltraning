@@ -31,7 +31,7 @@ register_default_headers( array(
 -------------------------------------------------------------------*/
 
 //define('WOOCOMMERCE_USE_CSS', false); //Remove default woocommerce css
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+//add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 function add_theme_scripts(){ //Function that adds scripts and stylesheets
     //Enqueue Styles
@@ -39,6 +39,7 @@ function add_theme_scripts(){ //Function that adds scripts and stylesheets
 
     //Enqueue Scripts
     wp_enqueue_script( 'menu.js', get_stylesheet_directory_uri() . '/assets/js/menu.js', array('jquery'), null, true);
+    wp_enqueue_script( 'select.js', get_stylesheet_directory_uri() . '/assets/js/select.js', array('jquery'), null, true);
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts'); //Executes the function add_theme_scripts
@@ -167,15 +168,15 @@ function product_grid() {
 -------------------Shop - Single Product----------------------------
 ------------------------------------------------------------------*/
 add_action('woocommerce_before_single_product_summary', 'woocommerce_breadcrumb', 1);
-remove_action('woocommerce_shop_loop', 'WC_Structured_Data::generate_product_data()', 10);
-remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+//remove_action('woocommerce_shop_loop', 'WC_Structured_Data::generate_product_data()', 10);
+//remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
 
-function wc_remove_all_quantity_fields( $return, $product ) {
+/*function wc_remove_all_quantity_fields( $return, $product ) {
     return true;
 }
 add_filter( 'woocommerce_is_sold_individually', 'wc_remove_all_quantity_fields', 10, 2 );
-
+*/
 function get_product_thumbnails($product){//Function that gets the product thumbnail images
     ?><div class="thumbnails">
     <?php
@@ -223,7 +224,7 @@ remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_pro
 
 
 
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+//remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 
 add_action('woocommerce_single_product_summary', 'get_product_categories', 6);
 function get_product_categories(){
@@ -246,5 +247,9 @@ function get_product_categories(){
 
 }
 
+
+
+
 ?>
+
 

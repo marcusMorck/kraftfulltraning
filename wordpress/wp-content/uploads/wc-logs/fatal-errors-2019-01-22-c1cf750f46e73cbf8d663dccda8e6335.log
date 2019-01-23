@@ -1,0 +1,10 @@
+2019-01-22T09:47:19+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:251
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): variation('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(60): do_action('woocommerce_sin...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template.php(690): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(178): load_template('/Applications/M...', false)
+#6 /Applications/MAMP/htdocs/kraftfulltr i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 251
+

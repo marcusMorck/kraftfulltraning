@@ -20,15 +20,28 @@ ul{
 body,html {
     padding: 0; /*remove default padding */
     margin: 0; /*remove default margin*/
+    font-family: Helvetica, Verdana, Arial, sans-serif; /*Default font styles*/
+
 }
-h1, h2, h3, p{
+h1, h2, h3, h4, h5, h6{
     margin: 0; /*remove default margin*/
+    font-weight: 700; /*set the boldness for the <h> tag*/
 }
 a{
     text-decoration: none; /*remove default underline from all a elements*/
 }
 main{
-    padding: 0 15px;
+    /*padding: 0 15px;*/
+    background-color: #f2f2f2; /*Default background color for main*/
+}
+
+h2{
+    font-size: 30px;
+    margin: 15px 0;
+}
+h5{
+    font-size: 14px;
+    margin: 15px 0;
 }
 /*-----------------------------------------------------------------------------------
 ---------------------------------HEADER----------------------------------------------
@@ -65,6 +78,10 @@ header{
 
 }
 #menu-huvudmeny a {
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
     color: #fff;
 }
 .sub-menu{
@@ -290,20 +307,55 @@ footer p{
 }
 .tabs{
     display: flex;
+    border-bottom: 1px solid #000000;
 }
-#tab-description{
+.woocommerce-Tabs-panel{
     padding: 15px 0;
 }
 
-.variations .value #pa_storlek{
-    height: 50px;
-    width: 200px;
-}
+
+
+
+
+
+
 .woocommerce-tabs ul{
-    background-color: #000;
+
 }
 .woocommerce-tabs li{
     margin-left: 5px;
     padding: 14px 16px;
-    background-color: #000;
+
+}
+
+#tab-title-pwb_tab{
+    display: none;
+}
+
+.wp-main{
+    display: flex;
+    justify-content: center;
+}
+.wp-content-wrapper p{
+    margin-bottom: 10px;
+}
+.wp-content-wrapper{
+    display: flex;
+    justify-content: center;
+    max-width: 1110px;
+    margin-bottom: 40px;
+}
+.wp-content-wrapper .main-content{
+    padding: 15px;
+    margin-right: 20px;
+    width: 60%;
+    background-color: #fff;
+}
+
+.wp-content-wrapper .side-content{
+    padding: 15px;
+    width: 30%;
+    background-color: #fff;
+
+    
 }
