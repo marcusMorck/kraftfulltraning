@@ -88,7 +88,7 @@ header ul{
     margin: 0;
 }
 
-#menu-huvudmeny a {
+#menu-huvudmeny li a {
     font-family: Helvetica, Verdana, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -101,22 +101,64 @@ header ul{
 #menu-huvudmeny a:hover{
     color: #e7d93a;
 }
+#menu-huvudmeny ul{
+    z-index: 99; 
+    position: absolute;
+    padding: 0;
+}
+.sub-menu li{
+    list-style-type: none;
+    background-color: #000;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px; 
+    border-top: solid 1px #2b2b2b;
+}
+#menu-huvudmeny .sub-menu li ul{
+    z-index: 100;
+    margin: 50px 0 0 200px;
+    
+
+}
+#menu-huvudmeny .sub-menu li ul li{
+    /*margin-bottom: 50px;*/
+}
+.sub-menu{
+    display: none;
+}
+.menu-item-has-children:hover > .sub-menu{
+    display: block;
+}
+/*
 .sub-menu{
     position: absolute;
     z-index: 99; 
-    background-color: #000;
-    list-style-type: none;
+    
+    
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 200px;
 }
 .sub-menu li{
     border-top: solid 1px #2b2b2b;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding-left: 15px;
     height: 50px;
     width: 150px;
+    
+   
 }
+
+.sub-menu li .sub-menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+*/
 /*.sub-menu li .sub-menu{
     position: absolute;
     z-index: 20;
