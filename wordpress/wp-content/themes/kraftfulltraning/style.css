@@ -11,36 +11,43 @@
 /*-----------------------------------------------------------------------------------
 ---------------------------------RESETS----------------------------------------------
 -----------------------------------------------------------------------------------*/
-ul{
-    
-    
-}
-
 body,html {
     padding: 0; /*remove default padding */
     margin: 0; /*remove default margin*/
-    font-family: Helvetica, Verdana, Arial, sans-serif; /*Default font styles*/
-
 }
 h1, h2, h3, h4, h5, h6{
     margin: 0; /*remove default margin*/
-    font-weight: 700; /*set the boldness for the <h> tag*/
 }
 a{
     text-decoration: none; /*remove default underline from all a elements*/
 }
+
+
+/*-----------------------------------------------------------------------------------
+---------------------------------Global Rules----------------------------------------
+-----------------------------------------------------------------------------------*/
+html{
+    font-family: Helvetica, Verdana, Arial, sans-serif; /*Default font styles*/
+}
 main{
-    /*padding: 0 15px;*/
     background-color: #f2f2f2; /*Default background color for main*/
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700; /*set the boldness for the <h> tag*/
 }
 
 h2{
     font-size: 32px;
-    margin: 15px 0;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
 }
 h5{
     font-size: 14px;
-    margin: 15px 0;
+    margin: 0 0 15px 0;
 }
 p{
     font-size: 12px;
@@ -63,9 +70,6 @@ header ul{
 /*---------------------------------------------
 -------------Custom-Header---------------------
 ---------------------------------------------*/
-#custom-header-img{
-
-}
 #custom-header-img img{ 
     width: 100%;
     height: auto;
@@ -74,20 +78,29 @@ header ul{
 /*---------------------------------------------
 -------------Main-Menu-------------------------
 ---------------------------------------------*/
-#menu-huvudmeny  {
+.menu-huvudmeny-container{
+    display: flex;
+    justify-content: center;
     width: 100%;
+    border-top: solid 1px #2b2b2b;
+}
+#menu-huvudmeny  {
+    width: 80%;
     height: 30px; /* set to the height you want your menu to be */
    /*  margin: 0 0 10px; /* just to give some spacing */
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    border-top: solid 1px #2b2b2b;
+
 }
 #menu-huvudmeny ul{
     margin: 0;
+    width: 60%;
 }
-
+#menu-huvudmeny li{
+    list-style-type: none;
+}
 #menu-huvudmeny li a {
     font-family: Helvetica, Verdana, Arial, sans-serif;
     font-size: 14px;
@@ -118,7 +131,7 @@ header ul{
 }
 #menu-huvudmeny .sub-menu li ul{
     z-index: 100;
-    margin: 50px 0 0 200px;
+    margin: 60px 0 0 200px;
     
 
 }
@@ -130,82 +143,6 @@ header ul{
 }
 .menu-item-has-children:hover > .sub-menu{
     display: block;
-}
-/*
-.sub-menu{
-    position: absolute;
-    z-index: 99; 
-    
-    
-    padding: 0;
-    margin: 0 0 0 200px;
-}
-.sub-menu li{
-    border-top: solid 1px #2b2b2b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 15px;
-    height: 50px;
-    width: 150px;
-    
-   
-}
-
-.sub-menu li .sub-menu{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-left: 200px;
-}
-*/
-/*.sub-menu li .sub-menu{
-    position: absolute;
-    z-index: 20;
-}
-/*.sub-menu{
-    display: none;
-}*/
-/*
-.sub-menu li{
-    display: flex;
-    flex-direction: column;
-   padding: 20px 40px;
-}
-.sub-menu .sub-menu li{
-    display: flex;
-}
-
-*/
-/*.menu-item-has-children:hover .sub-menu{
-    display: flex;
-}
-*/
-/*
-.menu-huvudmeny-container{
-    border-top: 1px solid #2b2b2b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-huvudmeny-container ul{
-    display: flex;
-    align-items: center;
-}
-.menu-huvudmeny-container li a{
-    color: #fff;
-    text-decoration: none;
-    padding: 14px 16px 14px 16px;
-}
-.menu-huvudmeny-container li a:hover{
-    color: #e6d74a;
-
-}
-*/
-
-main{
-    /*padding: 30px 40px 40px 40px;*/
 }
 
 /*-----------------------------------------------------------------------------------
@@ -329,6 +266,10 @@ footer p{
 .entry-summary .price{
     font-size: 22px;
     align-self: flex-start;
+    margin: 10px 0;
+}
+.variations_form .variations .label label{
+    margin-right: 20px; 
 }
 .woocommerce-product-gallery__wrapper{
     display: flex;
@@ -342,10 +283,23 @@ footer p{
     flex-wrap: wrap;
     flex: 2;
 }
+.product-image-gallery .thumbnails{
 
+}
+@media screen and (max-width: 960px){
+
+    .product-image-gallery .thumbnails{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .woocommerce-breadcrumb{
+        display: none;
+    }
+}
 .product-image-gallery .thumbnails{
     padding-bottom: 10px;
-    width: 235px;
 }
 .product-image-gallery .product-image{
     width: 550x;
@@ -395,7 +349,12 @@ footer p{
     padding: 0;
 
 }
-
+.product_meta{
+    display: none;
+}
+.reset_variations{
+    display: none;
+}
 
 
 .woocommerce-tabs a{
@@ -421,6 +380,7 @@ footer p{
 .wp-main{
     display: flex;
     justify-content: center;
+    
 }
 .wp-content-wrapper p{
     margin-bottom: 10px;
@@ -429,20 +389,55 @@ footer p{
     display: flex;
     justify-content: center;
     max-width: 1110px;
-    margin-bottom: 40px;
+    
 }
 .wp-content-wrapper .main-content{
-    padding: 15px;
+   
     margin-right: 20px;
     width: 60%;
     background-color: #fff;
 }
 
 .wp-content-wrapper .side-content{
-    padding: 15px;
     width: 30%;
     background-color: #fff;
 }
 .wp-content-wrapper ul li{
     margin-bottom: 5px;
+}
+.partner-gallery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.partner-gallery .partner-img img{
+    width: 100px;
+}
+.wp-post{
+    padding: 15px;
+}
+
+.follow-img img{
+    width: 300px;
+}
+
+@media screen and (max-width: 950px){
+    .wp-main{
+        justify-content: flex-start;
+    }
+    .wp-content-wrapper{
+        flex-direction: column;
+    }
+    .wp-content-wrapper .main-content{
+        width: 100%;
+        
+        margin: 0;
+    }
+    .wp-content-wrapper .side-content{
+        width:  100%;
+    }
+}
+div.qty {
+    float: left;
+    margin: 0 10px 10px 0;
 }

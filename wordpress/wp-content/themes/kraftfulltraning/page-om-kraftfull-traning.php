@@ -3,35 +3,36 @@
 <main class="wp-main">
     <div class="wp-content-wrapper">
         <div class="main-content">
-    
+            
             <h2>Välkommen till kraftfullträning</h2>
+            <div class="wp-post">
+                <h5>Kraftfull Träning hette tidigare Military Fitness Sweden, men från 1 april 2018 bedrivs träningsverksamhetens 3 delar under namnet Kraftfull Träning</h5>
 
-            <h5>Kraftfull Träning hette tidigare Military Fitness Sweden, men från 1 april 2018 bedrivs träningsverksamhetens 3 delar under namnet Kraftfull Träning</h5>
+                <h5>De 3 delarna är:</h5>
+                <h4>Bunkern Hisings Kärra - Boxen Säffle - Military Fitness Outdoor Training</h4>
 
-            <h5>De 3 delarna är:</h5>
-            <h4>Bunkern Hisings Kärra - Boxen Säffle - Military Fitness Outdoor Training</h4>
+                <p>Kraftfull Träning ansvarar sedan 1:e april 2018 även för Military Fitness event-verksamhet vad avser t ex möhippor,
+                företagsträning, företagsevents etc.</p>
+            </div>
+            <div class="wp-post">
+                <h5>Kraftfull Träning är det kompletta träningsvalet för dig som vill ha resultat och variation när du tränar. Vi erbjuder innepass i våra anläggningar, 
+                Bunkern Hisings Kärra och BOXEN Säffle samt Military Fitness Outdoor utomhus på flertalet platser och orter.</h5>
 
-            <p>Kraftfull Träning ansvarar sedan 1:e april 2018 även för Military Fitness event-verksamhet vad avser t ex möhippor,
-            företagsträning, företagsevents etc.</p>
-
-            <h5>Kraftfull Träning är det kompletta träningsvalet för dig som vill ha resultat och variation när du tränar. Vi erbjuder innepass i våra anläggningar, 
-            Bunkern Hisings Kärra och BOXEN Säffle samt Military Fitness Outdoor utomhus på flertalet platser och orter.</h5>
-
-            <ul>
-                <li><p>Kärra Göteborg</p></li>
-                <li><p>Skatås Göteborg</p></li>
-                <li><p>Billdal Göteborg</p></li>
-                <li><p>Säffle</p></li>
-                <li><p>Åmål</p></li>
-            </ul>
+                <ul>
+                    <li><p>Kärra Göteborg</p></li>
+                    <li><p>Skatås Göteborg</p></li>
+                    <li><p>Billdal Göteborg</p></li>
+                    <li><p>Säffle</p></li>
+                    <li><p>Åmål</p></li>
+                </ul>
  
 
-            <p>Passen är instruktörsledda med undantag för de pass som bedrivs som fri träning. Gruppträningspassen leds 
-            av en instruktör med upp till 36 deltagare per pass. Såväl nybörjare som erfarna utövare är varmt välkomna.</p>
+                <p>Passen är instruktörsledda med undantag för de pass som bedrivs som fri träning. Gruppträningspassen leds 
+                av en instruktör med upp till 36 deltagare per pass. Såväl nybörjare som erfarna utövare är varmt välkomna.</p>
 
-            <p>På våra anläggningar finns inga träningsmaskiner, speglar eller några extra bekvämligheter. Helt enkelt 
-            mycket funktionella anläggningar inriktat på funktionell träning. Här gäller svett, vilja och beslutsamhet.</p>
-
+                <p>På våra anläggningar finns inga träningsmaskiner, speglar eller några extra bekvämligheter. Helt enkelt 
+                mycket funktionella anläggningar inriktat på funktionell träning. Här gäller svett, vilja och beslutsamhet.</p>
+            </div>
             <h4>BootCamp</h4>
 
             <p>BootCamp är en kurs, normalt om 6 veckor med 3 pass / vecka. Kursen börjar med en introduktion och förberedande träning av 
@@ -78,10 +79,35 @@
         </div>
         <div class="side-content">
             <h3>Följ oss på facebook!</h3>
-
-            <img src="<?=get_template_directory_uri() . '/assets/images/tmbunk.png'?>"/>
-
+            <div class="follow-img">
+                <a href="https://www.facebook.com/teambunkern/?fref=ts">
+                    <img src="<?=get_template_directory_uri() . '/assets/images/tmbunk.png'?>"/>
+                </a>
+            </div>
             <h3>Partners</h3>
+            <div class="partner-gallery">
+                <div class="partner-img">
+                    <a href="http://www.militaryfitness.se/">
+                        <img src="<?=get_template_directory_uri() . '/assets/images/mt.png'?>"/>
+                    </a>
+                </div>
+                <div class="partner-img">
+                    <a href="http://www.militaryfitness.se/">
+                        <img src="<?=get_template_directory_uri() . '/assets/images/ocr.png'?>"/>
+                    </a>
+                </div>
+                <div class="partner-img">
+                    <img src="<?=get_template_directory_uri() . '/assets/images/ventfyr.png'?>"/>
+                </div>
+                <div class="partner-img">
+                    <img src="<?=get_template_directory_uri() . '/assets/images/datnova.png'?>"/>
+                </div>
+                <div class="partner-img">
+                    <img src="<?=get_template_directory_uri() . '/assets/images/IMT_logotyp.png'?>"/>
+                </div>
+            </div>
+
+            
         </div>
     </div>
 </main>

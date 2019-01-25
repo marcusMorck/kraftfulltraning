@@ -3,7 +3,7 @@
 -------------------Custom Menu------------------------------------
 ------------------------------------------------------------------*/
 function register_menu() { //Registers a custom wordpress menu
-    register_nav_menu('main-menu',__( 'Main Menu' ));
+    register_nav_menu('main-menu',__( 'Main Menu'));
   }
   add_action( 'init', 'register_menu' );//Executes the function
 /*------------------------------------------------------------------
@@ -245,6 +245,12 @@ function get_product_categories(){
     </ul>
     <?php
 
+}
+
+add_action( 'woocommerce_before_add_to_cart_quantity', 'echo_qty_front_add_cart' );
+ 
+function echo_qty_front_add_cart() {
+ echo '<div class="qty">Quantity </div>'; 
 }
 
 
