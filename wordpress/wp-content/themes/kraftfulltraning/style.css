@@ -31,9 +31,7 @@ a{
 html{
     font-family: Helvetica, Verdana, Arial, sans-serif; /*Default font styles*/
 }
-main{
-    background-color: #f2f2f2; /*Default background color for main*/
-}
+
 h1, h2, h3, h4, h5, h6{
     font-weight: 700; /*set the boldness for the <h> tag*/
 }
@@ -180,6 +178,7 @@ footer p{
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
+    
 }
 /*----------------------------------
 -----Product Cards------------------
@@ -188,11 +187,12 @@ footer p{
     background-color: #fff;
     width: 310px;
     height: 350px;
+    margin-bottom: 0 10px 5px;
     border-bottom: 1px solid #ccd6e0;
     border-right: 1px solid #ccd6e0;;
+    border-top: solid 1px #ccd6e0;
+    border-left: solid 1px #ccd6e0;
 }
-
-
 .products .product-cards:hover > .card-inner {
     box-shadow: inset 0 -2px #e7d93a;
 }
@@ -217,6 +217,7 @@ footer p{
 }
 .products .card-list{
     display: flex;
+    margin: 0;
 }
 .products .card-list .card-list-item{
     margin-left: 5px;

@@ -251,7 +251,7 @@ function get_product_categories(){
 add_action( 'woocommerce_before_add_to_cart_quantity', 'echo_qty_front_add_cart' );
  
 function echo_qty_front_add_cart() {
- echo '<div class="qty">Quantity </div>'; 
+ echo '<div class="qty">Antal </div>'; 
 }
 
 
