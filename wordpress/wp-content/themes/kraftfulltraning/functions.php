@@ -147,8 +147,9 @@ function product_grid() {
     ?>
         <div class="product-cards">
         <a class="card-inner" href="<?=the_permalink();?>">
-            <img class="card-img" src=<?=get_the_post_thumbnail_url( $product->get_id(), 'full' ); //Get the product image ?> /> 
-        
+            <div class="card-img">
+                <img src=<?=get_the_post_thumbnail_url( $product->get_id(), 'full' ); //Get the product image ?> /> 
+            </div>
         <ul class="card-list">
             <li class="card-list-item"><?=get_first_product_category_without_link();?></li>
             <li class="card-list-item">|</li>
@@ -159,7 +160,7 @@ function product_grid() {
 
 
     <p class="price"><?=$product->get_price();?> <?=get_woocommerce_currency_symbol(); //Product price and currency symbol?></p>
-
+    
     </a>
     </div>
     <?php
