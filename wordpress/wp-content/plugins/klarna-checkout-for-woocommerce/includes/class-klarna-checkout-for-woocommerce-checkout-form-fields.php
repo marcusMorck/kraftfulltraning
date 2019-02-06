@@ -8,17 +8,35 @@ class Klarna_Checkout_For_Woocommerce_Checkout_Form_Fields {
 	public static $klarna_order;
 
 	public function __construct() {
-		add_action( 'kco_wc_after_snippet', array( $this, 'add_email_field_to_form' ) );
-		add_action( 'kco_wc_after_snippet', array( $this, 'add_state_fields_to_form' ) );
+		add_action( 'kco_wc_after_snippet', array( $this, 'add_woocommerce_checkout_form_fields' ) );
 	}
 
-	public function add_email_field_to_form() {
-		echo '<input type="email" style="display:none" class="input-text " name="billing_email" id="billing_email" placeholder="">';
+	public function add_woocommerce_checkout_form_fields() {
+		echo '<div id="kco-hidden" style="display:none;">';
+		// Billing fields.
+		$billing_fields = WC()->checkout()->get_checkout_fields( 'billing' );
+		foreach ( $billing_fields as $key => $field ) {
+			if ( in_array( $key, array( 'billing_country', 'billing_email', 'billing_state' ) ) ) {
+				if ( isset( $field['country_field'], $fields[ $field['country_field'] ] ) ) {
+					$field['country'] = WC()->checkout->get_value( $field['country_field'] );
+				}
+				woocommerce_form_field( $key, $field, WC()->checkout->get_value( $key ) );
+			}
+		}
+
+		// Shipping fields.
+		$shipping_fields = WC()->checkout()->get_checkout_fields( 'shipping' );
+		foreach ( $shipping_fields as $key => $field ) {
+			if ( in_array( $key, array( 'shipping_country', 'shipping_state' ) ) ) {
+				if ( isset( $field['country_field'], $fields[ $field['country_field'] ] ) ) {
+					$field['country'] = WC()->checkout->get_value( $field['country_field'] );
+				}
+				woocommerce_form_field( $key, $field, WC()->checkout->get_value( $key ) );
+			}
+		}
+		echo '</div>';
 	}
-	public function add_state_fields_to_form() {
-		echo '<input type="text" style="display:none" class="input-text " name="billing_state" id="billing_state" placeholder="">';
-		echo '<input type="text" style="display:none" class="input-text " name="shipping_state" id="shipping_state" placeholder="">';
-	}
+
 
 	public static function maybe_set_klarna_order() {
 		if ( empty( self::$klarna_order ) ) {
@@ -34,7 +52,7 @@ class Klarna_Checkout_For_Woocommerce_Checkout_Form_Fields {
 	public static function maybe_set_customer_email() {
 		$klarna_order = self::maybe_set_klarna_order();
 		// Check that we got a response.
-		if ( empty( $klarna_order ) ) {
+		if ( empty( $klarna_order ) || is_wp_error( $klarna_order ) ) {
 			$email = null;
 		} else {
 			$klarna_order = json_decode( $klarna_order['body'] );
@@ -50,7 +68,7 @@ class Klarna_Checkout_For_Woocommerce_Checkout_Form_Fields {
 		if ( 'US' === WC()->customer->get_billing_country() ) {
 			$klarna_order = self::maybe_set_klarna_order();
 			// Check that we got a response.
-			if ( empty( $klarna_order ) ) {
+			if ( empty( $klarna_order ) || is_wp_error( $klarna_order ) ) {
 				$billing_state  = null;
 				$shipping_state = null;
 			} else {

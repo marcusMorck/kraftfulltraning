@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Nineteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-03 13:21:49+0000\n"
+"PO-Revision-Date: 2019-01-10 00:25:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,13 +11,18 @@ msgstr ""
 "Language: sv_SE\n"
 "Project-Id-Version: Themes - Twenty Nineteen\n"
 
+#. Description of the theme
+msgid "Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes."
+msgstr "Vårt standardtema för 2019 är utformat för att visa upp blockredigerarens möjligheter. Det har anpassade stilar för alla standardblock och är konstruerat så att innehållet i ser likadant ut redigeraren som på webbplatsen. Twenty Nineteen är utformat så att det kan anpassas för många typer av webbplatser, vare sig du har en fotoblogg, startar ett nytt företag eller stödjer en ideell förening. Det är byggt för att vara snyggt på skärmar av alla storlekar, med gott om vitt utrymme, rubriker i moderna sans-serifer i kombination med brödtext i klassiska serif-typsnitt."
+
 #. Theme Name of the theme
 msgid "Twenty Nineteen"
 msgstr "Twenty Nineteen"
 
-#. Description of the theme
-msgid "A new Gutenberg-ready theme."
-msgstr "Ett nytt tema som är förberett för Gutenberg."
+#. translators: %s: parent post link
+#: single.php:31
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
+msgstr "<span class=\"meta-nav\">Publicerad i</span><span class=\"post-title\">%s</span>"
 
 #: image.php:87
 msgctxt "Parent post link"
@@ -38,7 +43,7 @@ msgstr "Twenty Nineteen kräver lägst WordPress version 4.7. Du använder versi
 msgid "Back"
 msgstr "Tillbaka"
 
-#: inc/template-functions.php:208
+#: inc/template-functions.php:209
 msgid "More"
 msgstr "Mer"
 
@@ -149,9 +154,9 @@ msgstr "Meny för sociala länkar"
 msgid "Skip to content"
 msgstr "Hoppa till innehåll"
 
-#: image.php:52 template-parts/content/content.php:49
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content.php:49
 #: template-parts/content/content-single.php:40
-#: template-parts/content/content-page.php:27
 msgid "Pages:"
 msgstr "Sidor:"
 
@@ -221,11 +226,11 @@ msgstr "F Y"
 msgid "Comments are closed."
 msgstr "Kommentarer inaktiverade."
 
-#: classes/class-twentynineteen-walker-comment.php:92
+#: classes/class-twentynineteen-walker-comment.php:100
 msgid "Your comment is awaiting moderation."
 msgstr "Din kommentar inväntar granskning."
 
-#: classes/class-twentynineteen-walker-comment.php:87
+#: classes/class-twentynineteen-walker-comment.php:95
 msgid "Edit"
 msgstr "Redigera"
 
@@ -234,11 +239,11 @@ msgid "Comments"
 msgstr "Kommentarer"
 
 #. translators: 1: comment date, 2: comment time
-#: classes/class-twentynineteen-walker-comment.php:79
+#: classes/class-twentynineteen-walker-comment.php:87
 msgid "%1$s at %2$s"
 msgstr "%1$s \\k\\l. %2$s"
 
-#: classes/class-twentynineteen-walker-comment.php:59
+#: classes/class-twentynineteen-walker-comment.php:67
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s <span class=\"screen-reader-text says\">säger:</span>"
 
@@ -268,10 +273,10 @@ msgstr[1] "%1$s svar på ”%2$s”"
 msgid "Primary"
 msgstr "Huvudmeny"
 
-#. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:120 template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Redigera <span class=\"screen-reader-text\">%s</span>"
 
