@@ -189,6 +189,11 @@ function get_product_thumbnails($product){//Function that gets the product thumb
     ?><div class="thumbnails">
     <?php
        $attachment_ids = $product->get_gallery_image_ids();
+       ?>
+       <div class="thumbnail">
+            <img src="<?=wp_get_attachment_url($product->get_image_id());?>"/>
+        </div>
+        <?php
     foreach( $attachment_ids as $attachment_id ) {
             $image_link = wp_get_attachment_url( $attachment_id );
             ?>
