@@ -1,0 +1,25 @@
+/*-------------------------------------
+--------------BASE---------------------
+-------------------------------------*/
+@import '_partials/base/global';
+@import '_partials/base/resets';
+
+
+/*-------------------------------------
+--------------LAYOUT-------------------
+-------------------------------------*/
+@import '_partials/layout/_header';
+@import '_partials/layout/_footer';
+
+/*-------------------------------------
+--------------COMPONENTS---------------
+-------------------------------------*/
+@import '_partials/components/breadcrumb';
+@import '_partials/components/product-grid';
+@import '_partials/components/custom-header';
+@import '_partials/components/menu';
+@import '_partials/components/shop-title';
+
+/*-------------------------------------
+--------------PAGES--------------------
+-------------------------------------*/

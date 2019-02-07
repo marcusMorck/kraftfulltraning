@@ -1,0 +1,11 @@
+body,html {
+    padding: 0; /*remove default padding */
+    margin: 0; /*remove default margin*/
+
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0; /*remove default margin*/
+}
+a{
+    text-decoration: none; /*remove default underline from all a elements*/
+}

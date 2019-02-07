@@ -5,10 +5,13 @@
 function add_theme_scripts(){ //Function that adds scripts and stylesheets
     //Enqueue Styles
     wp_enqueue_style( 'style.css', get_stylesheet_uri() ); 
+    wp_enqueue_style( 'main.css', get_stylesheet_directory_uri() . '/main.css' ); 
 
     //Enqueue Scripts
     wp_enqueue_script( 'menu.js', get_stylesheet_directory_uri() . '/assets/js/menu.js', array('jquery'), null, true);
     wp_enqueue_script( 'select.js', get_stylesheet_directory_uri() . '/assets/js/select.js', array('jquery'), null, true);
+    wp_enqueue_script( 'thumbnail.js', get_stylesheet_directory_uri() . '/assets/js/thumbnail.js', array('jquery'), null, true);
+
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts'); //Executes the function add_theme_scripts
 
@@ -171,6 +174,7 @@ function remove_breadcrumb(){//Removes breadcrumb from specific pages
     }
 }
 add_filter('woocommerce_before_main_content', 'remove_breadcrumb');
+
 
 //Function that adds an productimage to the hook single_product_summary
 function add_productimage_single_product_summary() {

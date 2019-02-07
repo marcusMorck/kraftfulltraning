@@ -1,0 +1,18 @@
+.woocommerce-breadcrumb{
+    padding: 15px 0 15px 0;
+    width: 100%;
+    color: #686868;
+    font-size: 14px;
+
+    span{
+        margin: 0 10px;
+    }
+    a{
+        color: #686868;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #000;
+    }
+}
+ 

@@ -1,0 +1,99 @@
+
+
+.menu-huvudmeny-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: solid 1px #2b2b2b;
+
+    #menu-huvudmeny  {
+        width: 80%;
+        height: 30px; /* set to the height you want your menu to be */
+       /*  margin: 0 0 10px; /* just to give some spacing */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        ul{
+            margin: 0;
+            width: 60%;
+            z-index: 99; 
+            position: absolute;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        a {
+            font-family: Helvetica, Verdana, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #fff;
+        }
+        .current_page_item a{
+            color: #e7d93a;
+        }
+        a:hover{
+            color: #e7d93a;
+    
+    }
+    .sub-menu li{
+        list-style-type: none;
+        background-color: #000;
+        height: 50px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px; 
+        border-top: solid 1px #2b2b2b;
+    }
+    .sub-menu li ul{
+        z-index: 100;
+        margin: 60px 0 0 200px;
+        
+    
+    }
+    .sub-menu{
+        display: none;
+    }
+    .menu-item-has-children:hover > .sub-menu{
+        display: block;
+    }
+
+
+}
+
+/*
+
+#menu-huvudmeny ul{
+    z-index: 99; 
+    position: absolute;
+    padding: 0;
+}
+.sub-menu li{
+    list-style-type: none;
+    background-color: #000;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px; 
+    border-top: solid 1px #2b2b2b;
+}
+#menu-huvudmeny .sub-menu li ul{
+    z-index: 100;
+    margin: 60px 0 0 200px;
+    
+
+}
+#menu-huvudmeny .sub-menu li ul li{
+    /*margin-bottom: 50px;*/
+}
+.sub-menu{
+    display: none;
+}
+.menu-item-has-children:hover > .sub-menu{
+    display: block;
+}
