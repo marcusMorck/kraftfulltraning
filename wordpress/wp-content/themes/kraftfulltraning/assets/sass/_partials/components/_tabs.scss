@@ -1,0 +1,25 @@
+.woocommerce-tabs{
+
+    a{
+        color: #000;
+    }
+    .tabs{
+        border-bottom: 2px solid #000000;
+    }
+    ul{
+        li{
+            margin: 0 10px 0 10px;
+            padding: 10px 5px;
+        }
+        li:hover{
+            transition: 0.2s;
+            border-bottom: 4px solid #000;
+        }
+    }
+    .active{
+        border-bottom: 4px solid #000;
+    }
+    
+}
+ 
+  

@@ -1,0 +1,78 @@
+2019-02-12T10:02:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_related_products(), 0 passed in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php on line 278 and at least 1 expected in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-product-functions.php:885
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php(278): wc_get_related_products()
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): related_products('')
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(74): do_action('woocommerce_aft i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-product-functions.php på rad 885
+
+2019-02-12T10:11:56+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:279
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): related_products('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(74): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template.php(690): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(181): load_template('/Applications/M...', false)
+#6 /Applications i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 279
+
+2019-02-12T10:12:41+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:279
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): related_products('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(74): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template.php(690): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(181): load_template('/Applications/M...', false)
+#6 /Applications i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 279
+
+2019-02-12T10:17:09+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:279
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): related_products('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(74): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template.php(690): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(181): load_template('/Applications/M...', false)
+#6 /Applications i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 279
+
+2019-02-12T10:18:46+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:279
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): related_products('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(74): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template.php(690): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(181): load_template('/Applications/M...', false)
+#6 /Applications i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 279
+
+2019-02-12T10:18:50+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:279
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): related_products('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(74): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template.php(690): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(181): load_template('/Applications/M...', false)
+#6 /Applications i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 279
+
+2019-02-12T10:19:17+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:279
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): related_products('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(74): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template.php(690): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(181): load_template('/Applications/M...', false)
+#6 /Applications i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 279
+
+2019-02-12T10:19:20+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php:279
+Stack trace:
+#0 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(286): related_products('')
+#1 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/woocommerce/content-single-product.php(74): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-includes/template.php(690): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/plugins/woocommerce/includes/wc-core-functions.php(181): load_template('/Applications/M...', false)
+#6 /Applications i /Applications/MAMP/htdocs/kraftfulltraning/wordpress/wp-content/themes/kraftfulltraning/functions.php på rad 279
+

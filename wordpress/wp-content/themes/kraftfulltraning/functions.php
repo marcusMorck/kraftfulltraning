@@ -268,6 +268,15 @@ function echo_qty_front_add_cart() {
 
 
 
+//add_action('woocommerce_after_single_product_summary', 'related_products', 20);
+
+
+add_filter('woocommerce_product_tabs', 'remove_tabs', 98);
+
+function remove_tabs( $tabs ){ //Function that removes unesseccery tabs from 
+    unset ( $tabs['pwb_tab']);
+    return $tabs;
+}
 
 ?>
 
