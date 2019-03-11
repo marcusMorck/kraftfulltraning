@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
-    
+    padding-bottom: 20px;
 
     .product-cards{
         background-color: #fff;
@@ -24,7 +24,7 @@
 
             .card-title{
                 font-size: 16px;
-                padding: 5px;
+                padding: 5px 0 20px 0;
             }
 
             .card-img {/*set image size and some padding for the image in the product cards*/
@@ -42,6 +42,9 @@
             .card-list{
                 display: flex;
                 margin: 0;
+                padding: 0 0 10px 0;
+                list-style-type: none;
+
                 .card-list-item{
                     margin-left: 5px;
                 }
